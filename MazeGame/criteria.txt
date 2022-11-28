@@ -1,0 +1,20 @@
+Appropriate Use Of Containers : 
+	For the maze, a 2D array is used instead of an container to help ease visualization and coding. 
+	For storing data read from file and other formatted information, Lists and Maps are used. 
+
+Clear and distinct class/interface/method responsibilities : 
+	In ReadFile class, only one method was used instead of seperating it in to several methods due to errors faced at compile 
+	time with regard to passing objects by reference in to a method.  
+	All the other class, interfaces and methods were created with respect to the template pattern and decorator pattern.
+ 
+Appropriate error handling and logging :
+	Error Handling is done in the App class as well as readFile class. A seperate Exception class name MazeException was
+	created to handle exceptions in the game. 
+
+Appropriate use of the Strategy Pattern and/or Template Method Pattern :
+	Strategy Pattern is used to create MazeGrid, MazeSquare and MazeBlock classes.
+	Template Method Pattern is used to create Player, Key, Message clasess and Door and Wall Classes.
+
+Appropriate use of the Decorator Pattern : 
+	Decorator Pattern is used to add Vertical Walls and Horizontal Walls as well as Vertical Doors and Horizontal Doors as
+	decorators for the Wall and Door clasess respectively. 
